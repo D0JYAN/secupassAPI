@@ -34,7 +34,32 @@ exports.register = async (req, res) => {
 }
 
 exports.login = async (req, res) => {
-
+    const { username, password } = req.body;
+    //Consulta MySQL
+    const query = 'SELECT * FROM `usuarios` WHERE username =?;';
+    //Ejecutar la consulta
+    connection.query(query, [username], (err, result) => {
+        if (err) {
+            console.error('Error en la consulta:', err);
+            return res.status(500).json({ message: "Error en el servidor" });
+        }
+        console.log('Resultados de la consulta: ', result);
+        if (result.length > 0) {
+            //Comprobar contraseña
+            const user = result[0];//Datos del usuario
+            const samePass = bcryptjs.compareSync(password, user.password);//Compara las Contraseñas
+            if (samePass) {
+                //Si la contraseña es correcta, enviar datos del usuario
+                console.log("Usuario autenticado correctamente.");
+                res.json({ message: "Login Exitoso", data: result });
+            } else {
+                console.log("Contraseña incorrecta.");
+                res.json({ message: "Contraseña Incorrecta", data: [] });
+            }
+        } else {
+            res.status(401).json({ message: "Usuario o contraseña incorrectos", data: result });
+        }
+    })
 }
 
 exports.update = async (req, res) => {

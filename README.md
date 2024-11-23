@@ -1,5 +1,5 @@
 Este es la parte BackEnd de un proyecto denominado SecuPass (un generador de contraseñas), en esat parte se van a usar herramientas, frameworks y librerias como:
-<br><br>
+<br>
   - Express.js
   - Nodemon
   - MySQL2

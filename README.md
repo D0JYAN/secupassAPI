@@ -8,7 +8,7 @@ Este es la parte BackEnd de un proyecto denominado SecuPass (un generador de con
   - Cors
   
 El Proyecto está mayormente enfocado en la arquitectura API RESTful, donde el cliente y el servidor están desacoplados, y ambos pueden evolucionar independientemente siempre que respeten el contrato de la API.
-
+<br>
 La estrutura del proyecto es la siguiente:
 <br>
 ```plaintext
@@ -30,10 +30,12 @@ secupassAPI/
 <br>
 ¿Cómo inizializar el proyecto?
 <br>
-  - Paso 1.- Para levantar la API, dentro de nuestro editor de código, abrimos una terminal con la ruta del proyecto.
-  - Paso 2.- Una vez en dentro del proyecto, en la terminal se escribe el comando "nodemon server.js", lo que permitirá que todos los servicios que ofrece la API esten activos.
+  Paso 1.- Para levantar la API, dentro de nuestro editor de código, abrimos una terminal con la ruta del proyecto.
+  <br>
+  Paso 2.- Una vez en dentro del proyecto, en la terminal se escribe el comando "nodemon server.js", lo que permitirá que todos los servicios que ofrece la API esten activos.
 <br>
 ¿Cómo apago el proyecto?
 <br>
-  - Paso 1.- Una vez terminado las pruebas y visto que todo funciona correctamente, posicionados en la terminal, se presiona las teclas "Ctrl + C".
-  - Paso 2.- Preguntará si quieres dar de baja el servicio, presionas la tecla "S" para confirmar o "N" para cancelar, y listo.
+  Paso 1.- Una vez terminado las pruebas y visto que todo funciona correctamente, posicionados en la terminal, se presiona las teclas "Ctrl + C".
+  <br>
+  Paso 2.- Preguntará si quieres dar de baja el servicio, presionas la tecla "S" para confirmar o "N" para cancelar, y listo.

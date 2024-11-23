@@ -1,10 +1,11 @@
 Este es la parte BackEnd de un proyecto denominado SecuPass (un generador de contraseñas), en esat parte se van a usar herramientas, frameworks y librerias como:
-  -Express.js
-  -Nodemon
-  -MySQL2
-  -Body-Parser 
-  -Node.js
-  -Cors
+<br><br>
+  - Express.js
+  - Nodemon
+  - MySQL2
+  - Body-Parser 
+  - Node.js
+  - Cors
   
 El Proyecto está mayormente enfocado en la arquitectura API RESTful, donde el cliente y el servidor están desacoplados, y ambos pueden evolucionar independientemente siempre que respeten el contrato de la API.
 

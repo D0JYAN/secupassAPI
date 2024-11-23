@@ -6,11 +6,12 @@ Este es la parte BackEnd de un proyecto denominado SecuPass (un generador de con
   - Body-Parser 
   - Node.js
   - Cors
-  
+# Proyecto secupassAPI
+
 El Proyecto está mayormente enfocado en la arquitectura API RESTful, donde el cliente y el servidor están desacoplados, y ambos pueden evolucionar independientemente siempre que respeten el contrato de la API.
-<br>
-La estrutura del proyecto es la siguiente:
-<br>
+
+## La estrutura del proyecto es la siguiente:
+
 ```plaintext
 secupassAPI/
   ├── src/
